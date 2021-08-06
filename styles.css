@@ -1,0 +1,194 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    background: linear-gradient(180deg, rgba(36,80,118,1) 93%, rgba(46,94,136,1) 96%, rgba(52,103,147,1) 98%, rgba(70,130,180,1) 100%);
+    width: 980px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+#header {
+    width: 95%;
+    height: 100px;
+    display: flex;
+    margin-left: 34px;
+    justify-content: space-between;
+}
+
+    #header img {
+        width: 42%;
+    }
+
+    #header_right p {
+        width: 100%;
+        margin: 10px 0px 4px 54px;
+        color: azure;
+    }
+        
+        #header_right p a {
+            color: rgb(209,184,63);
+        }
+
+        #search_bar {
+            background-color: #444444;
+            height: 50px;
+            width: 295px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 1px 1px 3px black;
+            border-radius: 8px;
+        }
+
+            #search {
+                height: 26px;
+                width: 182px;
+                margin-right: 4px;
+            }
+
+            input[type="search"]::placeholder {
+                text-align: center;
+            }
+
+            #go {
+                height: 25px;
+                width: 36px;
+                background-color: #245076;
+                color: azure;
+                border-radius: 4px;
+            }
+
+#navbar {
+    background-color: rgb(69,125,173);
+    display: flex;
+    align-items: center;
+    width: 85%;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 14px;
+    margin: 20px 0px 20px 75px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px black;
+}
+
+    #navbar li a {
+        background-color: rgb(69,125,173);
+        height: 40px;
+        color: azure;
+        font-size: 22px;
+        text-decoration: none;
+        
+    }
+
+#main_content {
+    width: 100%;;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+
+    #main_content ul {
+        margin-top: 20px;
+        list-style: none;
+        text-align: center;
+        width: 28%;
+    }
+
+        #main_content ul li::before {
+            content: "\00BB";
+            color: goldenrod;
+            margin-right: 6px;
+        }
+
+        #main_content li, #main_content a {
+            margin: 14px 10px 0px 0px;
+            color: white;
+            list-style: none;
+        }
+
+    #about {
+        width: 58%;
+        text-align: center;
+    }
+
+        #about_python {
+            color: white;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .description {
+            color: goldenrod;
+            font-style: italic;
+            font-size: 18px;
+            margin-top: 16px;
+        }
+
+        #zen {
+            color: white;
+            margin-top: 16px;
+        }
+
+#sub_content {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+    .sub_content_boxes {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+        .sub_content_boxes ul {
+            list-style-type: square;
+            width: 72%;
+            margin-left: 72px;
+        }
+        
+        .sub_content_boxes p, .sub_content_boxes li {
+            text-align: center;
+            margin-top: 10px;
+            width: 80%;
+        }
+
+        .sub_content_boxes h3 {
+            margin-top: 22px;
+        }
+
+        .sub_content_links {
+            text-decoration: none;
+            color: rgb(69,125,173);
+        }
+
+#footer {
+    width: 66%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 50px;
+    align-self: center;
+}
+
+    #footer a {
+        text-decoration: none;
+        color: #6ea2d0;
+        font-size: 18px;
+    }
+
+#copyright {
+    color: #6ea2d0;
+    font-size: 10px;
+    align-self: center;
+    margin: 10px;
+    }
